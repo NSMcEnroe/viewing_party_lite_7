@@ -5,12 +5,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root :to => "users#index"
+  root to: 'users#index'
 
-  get "/register", to: "users#new", as: :register
-  resources :users, only: [:index, :new, :show, :create] 
-
-  
-
-  
+  get '/register', to: 'users#new', as: :register
+  resources :users, only: %i[index new show create]
 end
