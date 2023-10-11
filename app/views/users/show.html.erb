@@ -1,1 +1,11 @@
-<%= @user.name %>
+<h2><%= "#{@user.name}"'s Dashboard' %></h2>
+
+<br><%= button_to "Discover Movies", user_discover_path(@user), method: :get, data: { turbo: false } %>
+
+<ul>
+  <% @viewing_parties.each do |viewing_party| %>
+    <li>
+      <%= "#{viewing_party.movie_id}" %>
+    </li>
+  <% end %>
+</ul>
