@@ -4,6 +4,8 @@
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/environment.rb": {
         "lines": [
           null,
+          null,
+          null,
           1,
           null,
           null,
@@ -12,6 +14,8 @@
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/application.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -53,6 +57,8 @@
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/boot.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -61,6 +67,8 @@
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/environments/test.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           null,
@@ -128,6 +136,8 @@
           null,
           null,
           null,
+          null,
+          null,
           1,
           null,
           null,
@@ -165,11 +175,14 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/filter_parameter_logging.rb": {
         "lines": [
+          null,
+          null,
           null,
           null,
           null,
@@ -182,6 +195,7 @@
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/inflections.rb": {
         "lines": [
+          null,
           null,
           null,
           null,
@@ -212,27 +226,69 @@
           null,
           null,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
           null
         ]
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/routes.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           null,
           null,
           null,
+          1,
+          1,
           null
         ]
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/helpers/application_helper.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
           1,
           null
         ]
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/models/user.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           1,
@@ -244,54 +300,7 @@
       },
       "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/models/application_record.rb": {
         "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/spec/models/user_viewing_party_spec.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
           null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/models/user_viewing_party.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/spec/models/viewing_party_spec.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/models/viewing_party.rb": {
-        "lines": [
-          1,
-          1,
-          1,
           null,
           1,
           1,
@@ -299,6 +308,6 @@
         ]
       }
     },
-    "timestamp": 1696978969
+    "timestamp": 1697029476
   }
 }
