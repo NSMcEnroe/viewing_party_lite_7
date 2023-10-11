@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/environment.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -12,7 +12,7 @@
           1
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/application.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/application.rb": {
         "lines": [
           null,
           null,
@@ -55,7 +55,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/boot.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/boot.rb": {
         "lines": [
           null,
           null,
@@ -65,7 +65,7 @@
           1
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/environments/test.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/environments/test.rb": {
         "lines": [
           null,
           null,
@@ -131,7 +131,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/assets.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -149,7 +149,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/content_security_policy.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -160,41 +160,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/inflections.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -214,7 +179,42 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/permissions_policy.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -230,88 +230,9 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/factories/users.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/spec/factories/users.rb": {
         "lines": [
-          null,
-          null,
           1,
-          1,
-          4,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/routes.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/helpers/application_helper.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/new_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/models/user_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
           1,
           2,
           2,
@@ -319,12 +240,40 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/user.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/spec/factories/viewing_parties.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/config/routes.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
-          null,
-          null,
+          1,
+          null
+        ]
+      },
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/models/user.rb": {
+        "lines": [
           1,
           1,
           1,
@@ -334,7 +283,7 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/application_record.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -343,100 +292,45 @@
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/models/user_viewing_party_spec.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/controllers/users_controller.rb": {
         "lines": [
+          1,
+          1,
+          1,
           null,
           null,
           1,
-          1,
-          2,
-          2,
+          0,
           null,
           null,
           1,
-          2,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
           null,
           null
         ]
       },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/user_viewing_party.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/models/viewing_party_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/viewing_party.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/users_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          5,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/application_controller.rb": {
+      "/Users/thomastakahashi/Turing/turing_work/3mod/projects/viewing_party_lite_7/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -445,6 +339,6 @@
         ]
       }
     },
-    "timestamp": 1697041807
+    "timestamp": 1697047195
   }
 }
