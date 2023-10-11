@@ -19,15 +19,13 @@ class UsersController < ApplicationController
     if user.save
       # User is successfully saved
       redirect_to "/users/#{user.id}"
-    else 
+    else
       # Email is not unique, show flash alert
       # Error messages inherited my applciation controller
       flash.now[:alert] = "Error: #{error_message(user.errors)}"
       render 'new'
     end
   end
-
-
 
   private
 

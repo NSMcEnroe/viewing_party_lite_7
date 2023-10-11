@@ -21,7 +21,7 @@ RSpec.describe 'User New Page', type: :feature do
   end
 
   it 'denies a new user if the email is not unique' do
-    user_1 = create(:user, name: "Hey", email: "psue@turing.edu")
+    create(:user, name: 'Alfred', email: 'psue@turing.edu')
 
     visit '/register'
 
@@ -30,10 +30,10 @@ RSpec.describe 'User New Page', type: :feature do
 
     click_button('Register')
 
-    expect(page).to have_content("Email has already been taken")
+    expect(page).to have_content('Email has already been taken')
   end
 
-  it "denies a new user if any field is blank" do
+  it 'denies a new user if any field is blank' do
     visit '/register'
 
     fill_in('name', with: '')
