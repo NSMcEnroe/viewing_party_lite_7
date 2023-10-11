@@ -7,8 +7,9 @@ RSpec.describe 'User Index Page', type: :feature do
     end
 
     it "displays the users name and Dashboard on the top of the page" do
-      visit users_path(@user.id)
+      visit user_path(@user.id)
 
+      expect(page).to have_content("#{@user.name}"'s Dashboard')
     end
   end
 end
