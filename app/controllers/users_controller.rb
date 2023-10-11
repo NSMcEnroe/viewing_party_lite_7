@@ -16,13 +16,17 @@ class UsersController < ApplicationController
   def create
     user = User.new(user_params)
 
-    user.save
-    # if !merchant.save
-    #   flash.now[:alert] = "Please Input a Name"
-    #   render :new
-    # else
-    redirect_to "/users/#{user.id}"
+    if !user.save
+      # Email is not unique, show flash alert
+      flash[:alert] = "Please try again.  All fields must be filled in and the emails adress must be unique."
+      render 'new'
+    else 
+      # User is successfully saved
+      redirect_to "/users/#{user.id}"
+    end
   end
+
+
 
   private
 
