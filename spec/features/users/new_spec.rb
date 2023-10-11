@@ -9,8 +9,6 @@ RSpec.describe 'User New Page', type: :feature do
     fill_in('name', with: 'Peggy Sue')
     fill_in('email', with: 'psue@turing.edu')
 
-    #Refactor Later
-
     click_button('Register')
 
     user = User.last
@@ -22,6 +20,28 @@ RSpec.describe 'User New Page', type: :feature do
     expect(user.email).to eq('psue@turing.edu')
   end
 
-  xit 'denies a new user if the email is not unique' do
+  it 'denies a new user if the email is not unique' do
+    user_1 = create(:user, name: "Hey", email: "psue@turing.edu")
+
+    visit '/register'
+
+    fill_in('name', with: 'Peggy Sue')
+    fill_in('email', with: 'psue@turing.edu')
+
+    click_button('Register')
+
+    expect(page).to have_content("Email has already been taken")
+  end
+
+  it "denies a new user if any field is blank" do
+    visit '/register'
+
+    fill_in('name', with: '')
+    fill_in('email', with: '')
+
+    click_button('Register')
+
+    expect(page).to have_content("Name can't be blank")
+    expect(page).to have_content("Email can't be blank")
   end
 end
