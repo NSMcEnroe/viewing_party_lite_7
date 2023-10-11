@@ -1,4 +1,4 @@
-<br><%= button_to "Create New User", new_user_path %>
+<br><%= button_to "Create New User", register_path, method: :get, data: { turbo: false } %>
 
 <ul>
 <% @users.each do |user| %>
