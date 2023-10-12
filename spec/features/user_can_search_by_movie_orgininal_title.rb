@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Movie Search' do
   describe 'happy path' do
     xit 'allows user to search for movies by original title' do
       user = create(:user)
-      
+
       visit "users/#{user.id}/discover"
 
       fill_in :search, with: 'Barbie'
