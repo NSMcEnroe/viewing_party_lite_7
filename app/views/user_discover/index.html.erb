@@ -1,1 +1,10 @@
 <h1> Discover Movies </h1>
+
+<br><%= button_to "Find Top Rated Movies", foo_path, method: :get, data: { turbo: false } %>
+
+<%= form_with url: search_path, local: true do |form| %>
+  <%= form.label :search %>
+  <%= form.text_field :search %>
+  <%= form.submit 'Search' %>
+<% end %>
+

@@ -78,8 +78,8 @@ VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
   # We'll change this later
-  config.filter_sensitive_data('<PROPUBLICA_API_KEY>') do
-    Rails.application.credentials.propublica[:key]
+  config.filter_sensitive_data('<TMDB>') do
+    Rails.application.credentials.tmdb[:key]
   end
   config.configure_rspec_metadata!
 end

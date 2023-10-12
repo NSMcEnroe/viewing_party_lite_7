@@ -10,4 +10,8 @@ Rails.application.routes.draw do
     resources :viewing_parties, only: [:show]
   end
   get "/users/:user_id/discover", to: "user_discover#index", as: :user_discover
+
+
+  post "/search", to: "search#search"
+
 end
