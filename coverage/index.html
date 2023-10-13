@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-13T00:50:47-06:00">2023-10-13T00:50:47-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-13T09:08:28-06:00">2023-10-13T09:08:28-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.19
+         3.09
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>32</b> files in total.
+    <b>33</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>243</b> relevant lines,
-    <span class="green"><b>243</b> lines covered</span> and
+    <b>256</b> relevant lines,
+    <span class="green"><b>256</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3cfc14dc7e3ea2596a1e4b04ac284353e8bb9911" class="src_link" title="app/controllers/movies_controller.rb">app/controllers/movies_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">2.25</td>
             
           </tr>
         
@@ -121,7 +121,7 @@
             <td class="cell--number">11</td>
             <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">8.09</td>
+            <td class="cell--number">12.64</td>
             
           </tr>
         
@@ -183,11 +183,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#65e7d9a7b07a520484d48a1294421990cfcadbda" class="src_link" title="app/poros/movie.rb">app/poros/movie.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">26.60</td>
+            <td class="cell--number">53.00</td>
             
           </tr>
         
@@ -198,7 +198,7 @@
             <td class="cell--number">11</td>
             <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.27</td>
+            <td class="cell--number">3.18</td>
             
           </tr>
         
@@ -319,7 +319,7 @@
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">6.50</td>
+            <td class="cell--number">7.50</td>
             
           </tr>
         
@@ -331,6 +331,17 @@
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
             <td class="cell--number">2.80</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#04f89ee9e791beb273e706d16f7448b8d170a6bb" class="src_link" title="spec/features/movies/index_spec.rb">spec/features/movies/index_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -691,8 +702,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -737,13 +748,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="4">
+            <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">    @facade = MovieFacade.new(movie_params[:query])</code>
+            <code class="ruby">    @facade = MovieFacade.new(params[:query])</code>
           </li>
         </div>
       
@@ -776,7 +787,7 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  def show</code>
           </li>
         </div>
       
@@ -787,34 +798,12 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def movie_params</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="10">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">    params.permit(:query)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -825,7 +814,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -1327,8 +1327,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="4">
+            <span class="hits">6</span>
             
 
             
@@ -1371,8 +1371,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="8">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="8">
+            <span class="hits">6</span>
             
 
             
@@ -1393,8 +1393,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="10">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="10">
+            <span class="hits">6</span>
             
 
             
@@ -1404,8 +1404,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="11">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="4" data-linenumber="11">
+            <span class="hits">4</span>
             
 
             
@@ -1459,8 +1459,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="16">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="16">
+            <span class="hits">6</span>
             
 
             
@@ -1470,8 +1470,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="65" data-linenumber="17">
-            <span class="hits">65</span>
+          <li class="covered" data-hits="105" data-linenumber="17">
+            <span class="hits">105</span>
             
 
             
@@ -2083,8 +2083,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2113,7 +2113,7 @@
 
             
 
-            <code class="ruby">  attr_reader :original_title, :vote_average</code>
+            <code class="ruby">  attr_reader :original_title, :vote_average, :movie_id</code>
           </li>
         </div>
       
@@ -2140,8 +2140,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="65" data-linenumber="5">
-            <span class="hits">65</span>
+          <li class="covered" data-hits="105" data-linenumber="5">
+            <span class="hits">105</span>
             
 
             
@@ -2151,8 +2151,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="65" data-linenumber="6">
-            <span class="hits">65</span>
+          <li class="covered" data-hits="105" data-linenumber="6">
+            <span class="hits">105</span>
             
 
             
@@ -2162,7 +2162,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="covered" data-hits="105" data-linenumber="7">
+            <span class="hits">105</span>
+            
+
+            
+
+            <code class="ruby">    @movie_id = data[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -2173,7 +2184,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -2237,8 +2248,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="3">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="3">
+            <span class="hits">6</span>
             
 
             
@@ -2248,8 +2259,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="4">
+            <span class="hits">6</span>
             
 
             
@@ -2303,8 +2314,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="9">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="9">
+            <span class="hits">6</span>
             
 
             
@@ -2314,8 +2325,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="10">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="10">
+            <span class="hits">6</span>
             
 
             
@@ -2358,8 +2369,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="14">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="4" data-linenumber="14">
+            <span class="hits">4</span>
             
 
             
@@ -5006,7 +5017,7 @@
 
             
 
-            <code class="ruby">    resources :movies, only: [:index] do</code>
+            <code class="ruby">    resources :movies, only: [:index, :show] do</code>
           </li>
         </div>
       
@@ -5152,8 +5163,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="5">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="14" data-linenumber="5">
+            <span class="hits">14</span>
             
 
             
@@ -5163,8 +5174,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="6">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="14" data-linenumber="6">
+            <span class="hits">14</span>
             
 
             
@@ -5316,6 +5327,323 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="04f89ee9e791beb273e706d16f7448b8d170a6bb">
+  <div class="header">
+    <h3>spec/features/movies/index_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>14</b> relevant lines.
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;Movies Index Page&#39;, type: :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;displays a button to return the user back to the user discover page&#39;, :vcr do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    user = create(:user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/users/#{user.id}/movies&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_button(&#39;Discover Movies&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_button(&#39;Discover Movies&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/users/#{user.id}/discover&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;takes the user to the movie show page when clicking a movie&quot;, :vcr do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    user = create(:user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/users/#{user.id}/movies&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_link(&quot;The Godfather&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/users/#{user.id}/movies/238&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;Hello World!&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
