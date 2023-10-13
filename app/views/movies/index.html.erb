@@ -2,5 +2,6 @@
 <% @facade.movies.each do |movie| %>
   <ul class="movie">
   <li class="title"><%= movie.original_title %></li>
+  <li class="average"><%= movie.vote_average %></li>
 </ul>
 <% end %>

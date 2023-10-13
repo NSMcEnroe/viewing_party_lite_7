@@ -14,7 +14,7 @@ class MovieDatabaseService
     get_url("/3/movie/top_rated")
   end
 
-  def search_movies
-    get_url("/3/discover/movie")
+  def search_movies(keyword)
+    get_url("/3/search/movie?query=#{keyword}")
   end
 end
