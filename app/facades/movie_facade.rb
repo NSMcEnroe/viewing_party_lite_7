@@ -7,7 +7,7 @@ class MovieFacade
   def movies
     service = MovieDatabaseService.new
 
-    if @keyword.nil?
+    if @keyword.nil? || @keyword == ""
       data = service.top_rated_movies
     else
       data = service.search_movies(@keyword)
