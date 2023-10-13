@@ -1,4 +1,4 @@
-class TMDBService
+class MovieDatabaseService
   def conn
     Faraday.new(url: "https://api.themoviedb.org") do |faraday|
       faraday.params["api_key"] = Rails.application.credentials.tmdb[:key]
@@ -11,11 +11,10 @@ class TMDBService
   end
 
   def top_rated_movies
-    get_url("/3/movie/top_rated.json")
+    get_url("/3/movie/top_rated")
   end
 
-  def search_movies(keyword)
-    get_url("/3/discover/movie.json")
+  def search_movies
+    get_url("/3/discover/movie")
   end
-
 end

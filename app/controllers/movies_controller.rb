@@ -30,9 +30,8 @@ class MoviesController < ApplicationController
   #   # found_movies = movies.find_all {|m| m[:original_title] == params[:search]}
 
   def index
-    @facade = MovieFacade.new
-  end
-    
+    @facade = MovieFacade.new.movies
+  end   
 end
 
 
