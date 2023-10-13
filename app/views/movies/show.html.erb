@@ -1,1 +1,15 @@
-<p>Hello World!</p>
+<%= button_to "Create A Viewing Party", new_user_movie_viewing_party_path(movie_id: @movie.show_movie.movie_id), method: :get, data: { turbo: false } %>  
+
+<br><%= button_to "Discover Movies", user_discover_index_path, method: :get, data: { turbo: false } %> 
+
+<h1><%= "#{@movie.show_movie.original_title}" %> Details</h1>
+<ul class="movie-details">
+  <li><%= @movie.show_movie.original_title %></li>
+  <li><%= @movie.show_movie.vote_average %></li>
+  <li><%= @movie.show_movie.runtime %></li>
+  <li><%= @movie.show_movie.genre %></li>
+  <li><%= @movie.show_movie.summary %></li>
+  <li><%= @movie.cast.first_10_cast_members %></li>
+  <li><%= @movie.show_movie.total_reviews_count %></li>
+  <li><%= @movie.review_info.review_details %></li>
+</ul>

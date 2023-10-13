@@ -17,10 +17,9 @@ RSpec.describe 'Movies Index Page', type: :feature do
     user = create(:user)
 
     visit "/users/#{user.id}/movies"
-
+    
     click_link("The Godfather")
-
+    
     expect(current_path).to eq("/users/#{user.id}/movies/238")
-    expect(page).to have_content("Hello World!")
   end
 end
