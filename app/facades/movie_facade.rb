@@ -3,12 +3,13 @@ class MovieFacade
   end
 
   def movies
-    service = TMDBService.new
-    data = service.search_movies
+    service = MovieDatabaseService.new
 
-    @movies = data[:results].map do |movie_data|
+    data = service.top_rated_movies
+    
+    data[:results].map do |movie_data|
       Movie.new(movie_data)
     end
   end
-
 end
+

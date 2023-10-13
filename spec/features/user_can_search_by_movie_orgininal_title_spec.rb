@@ -14,10 +14,10 @@ RSpec.describe 'Movie Search' do
 
       expect(page.status_code).to eq 200
 
-      expect(current_path).to eq('/helloworld')
+      expect(current_path).to eq("/users/#{user.id}/movies")
 
       # expect(page).to have_content("Senator Bernard Sanders was found!")
-      # expect(page).to have_content("SenSanders")
+      expect(page).to have_content("Barbie")
     end
   end
 end
