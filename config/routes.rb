@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get '/register', to: 'users#new', as: :register
   resources :users, only: [:index, :new, :show, :create] do
-    get "/discover" => 'user_discover#index', as: :discover
+    resources :discover, only: [:index]
     resources :movies, only: [:index] do
       resources :viewing_parties, only: [:show]
     end

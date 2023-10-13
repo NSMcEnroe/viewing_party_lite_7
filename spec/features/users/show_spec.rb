@@ -21,7 +21,7 @@ RSpec.describe 'User Show Page', type: :feature do
 
       click_on('Discover Movies')
 
-      expect(current_path).to eq(user_discover_path(user))
+      expect(current_path).to eq(user_discover_index_path(user))
     end
 
     it 'displays a section that contains a list of viewing parties ' do

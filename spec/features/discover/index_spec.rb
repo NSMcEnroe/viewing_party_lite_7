@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'User Discover Page', type: :feature do
-  xit 'displays a button to discover top rated movies and redirects to movie results page' do
+  it 'displays a button to discover top rated movies and redirects to movie results page' do
     user = create(:user)
 
     visit "users/#{user.id}/discover"
@@ -12,10 +12,10 @@ RSpec.describe 'User Discover Page', type: :feature do
 
     click_button('Find Top Rated Movies')
 
-    expect(current_path).to eq("users/#{user.id}/movies?q=top%20rated")
+    expect(current_path).to eq("/users/#{user.id}/movies")
   end
 
-  xit 'displays a button to search for movie original titles and redirects to movie results page' do
+  it 'displays a button to search for movie original titles and redirects to movie results page' do
     user = create(:user)
 
     visit "users/#{user.id}/discover"
@@ -26,6 +26,6 @@ RSpec.describe 'User Discover Page', type: :feature do
 
     click_button('Search')
 
-    expect(current_path).to eq("users/#{user.id}/movies?q=keyword")
+    expect(current_path).to eq("/users/#{user.id}/movies")
   end
 end
