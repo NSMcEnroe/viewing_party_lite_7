@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -5,9 +7,13 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'users#index'
 
-  get "/register", to: "users#new", as: :register
+  get '/register', to: 'users#new', as: :register
   resources :users, only: [:index, :new, :show, :create] do
-    resources :viewing_parties, only: [:show]
+    resources :discover, only: [:index]
+    resources :movies, only: [:index] do
+      resources :viewing_parties, only: [:show]
+    end
   end
-  get "/users/:user_id/discover", to: "user_discover#index", as: :user_discover
 end
+
+

@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe 'User Index Page', type: :feature do
-  describe "when a user visits the users_path(user)" do
-    it "displays the users name and Dashboard on the top of the page" do
+RSpec.describe 'User Show Page', type: :feature do
+  describe 'when a user visits the users_path(user)' do
+    it 'displays the users name and Dashboard on the top of the page' do
       @user = create(:user)
 
       visit user_path(@user)
@@ -10,7 +12,7 @@ RSpec.describe 'User Index Page', type: :feature do
       expect(page).to have_content("#{@user.name}"'s Dashboard')
     end
 
-    it "displays a button to discover movies that redirects the user to the users discover page" do
+    it 'displays a button to discover movies that redirects the user to the users discover page' do
       user = create(:user)
 
       visit user_path(user.id)
@@ -19,12 +21,12 @@ RSpec.describe 'User Index Page', type: :feature do
 
       click_on('Discover Movies')
 
-      expect(current_path).to eq(user_discover_path(user))
+      expect(current_path).to eq(user_discover_index_path(user))
     end
 
-    it "displays a section that contains a list of viewing parties " do
+    it 'displays a section that contains a list of viewing parties ' do
       user_1 = create(:user)
-      user_2 = create(:user)
+      create(:user)
       viewing_party_1 = create(:viewing_party)
       viewing_party_2 = create(:viewing_party)
       viewing_party_3 = create(:viewing_party)
