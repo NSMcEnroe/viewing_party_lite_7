@@ -47,6 +47,14 @@ RSpec.describe 'Movies Show Page', type: :feature do
     expect(page).to have_content("They’re both flawless crime dramas")
     expect(page).to have_content("Rating: 10.0")
   end
+
+  it "displays 0 reviews if no one has given the review", :vcr do
+    user = create(:user)
+
+    visit "/users/#{user.id}/movies/1146348"
+
+    expect(page).to have_content("Total Reviews: 0")
+  end
   # likst the first 10 cast members
   # expect(page).to have_content(@movie.cast.first_10_cast_members)
 end

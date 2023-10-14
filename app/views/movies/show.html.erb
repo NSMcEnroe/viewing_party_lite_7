@@ -13,7 +13,14 @@
 </ul>
 
   <h2> Reviews </h2>
-  <p> Total Reviews: <%= @movie.review_info[0].total_reviews %></p>
+  <div id = "review count">
+    <% if @movie.review_info[0].nil? %>
+      <p> Total Reviews: 0 </p>
+    <% else %>
+      <p> Total Reviews: <%= @movie.review_info[0].total_reviews %></p>
+    <% end %>
+    </div>
+
 <% @movie.review_info.each do |review| %>
   <li><%= review.author %></li>
   <li><%= review.review %></li>
