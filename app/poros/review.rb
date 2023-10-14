@@ -1,9 +1,9 @@
 class Review
-  attr_reader :total_reviews, :author, :reviews, :rating 
-  def initialize(data)
-    @total_reviews = data[:total_results]
+  attr_reader :total_reviews, :author, :review, :rating 
+  def initialize(data, total_results)
+    @total_reviews = total_results
     @author = data[:author]
-    @reviews = data[:content]
+    @review = data[:content]
     @rating = data[:author_details][:rating]
   end
 end

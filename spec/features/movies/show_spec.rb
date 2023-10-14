@@ -37,8 +37,16 @@ RSpec.describe 'Movies Show Page', type: :feature do
     expect(page).to have_content("survives an attempt on his life")
   end
   
-  # likst the first 10 cast members, count of total reviews as well as the author and information
+  it "displays details about the movie: the count of total reviews as well as the author and the information", :vcr do
+    user = create(:user)
+
+    visit "/users/#{user.id}/movies/238"
+
+    expect(page).to have_content("Total Reviews: 5")
+    expect(page).to have_content("futuretv")
+    expect(page).to have_content("They’re both flawless crime dramas")
+    expect(page).to have_content("Rating: 10.0")
+  end
+  # likst the first 10 cast members
   # expect(page).to have_content(@movie.cast.first_10_cast_members)
-  # expect(page).to have_content(@movie.show_movie.total_reviews_count)
-  # expect(page).to have_content(@movie.review_info.review_details)
 end

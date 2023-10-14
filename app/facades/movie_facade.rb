@@ -32,7 +32,7 @@ class MovieFacade
     data = MovieDatabaseService.new.reviews(@keyword)
 
     data[:results].map do |review_data|
-      Review.new(review_data)
+      Review.new(review_data, data[:total_results])
     end
   end
 end

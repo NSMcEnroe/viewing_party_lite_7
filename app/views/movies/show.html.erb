@@ -3,6 +3,7 @@
 <br><%= button_to "Discover Movies", user_discover_index_path, method: :get, data: { turbo: false } %> 
 
 <h1><%= "#{@movie.show_movie.original_title}" %> Details</h1>
+
 <ul class="movie-details">
   <li><%= @movie.show_movie.original_title %></li>
   <li><%= @movie.show_movie.vote_average %></li>
@@ -10,3 +11,12 @@
   <li><%= @movie.show_movie.all_genres %></li>
   <li><%= @movie.show_movie.summary %></li>
 </ul>
+
+  <h2> Reviews </h2>
+  <p> Total Reviews: <%= @movie.review_info[0].total_reviews %></p>
+<% @movie.review_info.each do |review| %>
+  <li><%= review.author %></li>
+  <li><%= review.review %></li>
+  <li>Rating: <%= review.rating%></li>
+<% end %>
+
