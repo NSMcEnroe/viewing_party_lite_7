@@ -25,14 +25,14 @@ class MovieFacade
 
   def cast
     data = MovieDatabaseService.new.find_cast(@keyword)
-    Movie.new(data)
+    Cast.new(data)
   end
 
   def review_info
     data = MovieDatabaseService.new.reviews(@keyword)
 
-    data[:results].map do |movie_data|
-      Movie.new(movie_data)
+    data[:results].map do |review_data|
+      Review.new(review_data)
     end
   end
 end

@@ -25,18 +25,20 @@ RSpec.describe 'Movies Show Page', type: :feature do
     expect(current_path).to eq("/users/#{user.id}/discover")
   end
 
-  xit "displays details about the movie: movie title, vote avgerage, runtime in hours & min, genre(s), summary description, likst the first 10 cast members, count of total reviews as well as the author and information", :vcr do
+  it "displays details about the movie: movie title, vote average, runtime in hours & min, genre(s), summary description", :vcr do
     user = create(:user)
 
     visit "/users/#{user.id}/movies/238"
 
-    expect(page).to have_content(@movie.show_movie.original_title)
-    expect(page).to have_content(@movie.show_movie.vote_average)
-    expect(page).to have_content(@movie.show_movie.runtime)
-    expect(page).to have_content(@movie.show_movie.genre)
-    expect(page).to have_content(@movie.show_movie.summary)
-    expect(page).to have_content(@movie.cast.first_10_cast_members)
-    expect(page).to have_content(@movie.show_movie.total_reviews_count)
-    expect(page).to have_content(@movie.review_info.review_details)
+    expect(page).to have_content("The Godfather")
+    expect(page).to have_content("8.709")
+    expect(page).to have_content("2:55")
+    expect(page).to have_content("Drama, Crime")
+    expect(page).to have_content("survives an attempt on his life")
   end
+  
+  # likst the first 10 cast members, count of total reviews as well as the author and information
+  # expect(page).to have_content(@movie.cast.first_10_cast_members)
+  # expect(page).to have_content(@movie.show_movie.total_reviews_count)
+  # expect(page).to have_content(@movie.review_info.review_details)
 end
