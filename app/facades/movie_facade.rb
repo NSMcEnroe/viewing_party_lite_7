@@ -17,5 +17,23 @@ class MovieFacade
       Movie.new(movie_data)
     end
   end
+
+  def show_movie
+    data = MovieDatabaseService.new.find_movie(@keyword)
+    Movie.new(data)
+  end
+
+  def cast
+    data = MovieDatabaseService.new.find_cast(@keyword)
+    Cast.new(data)
+  end
+
+  def review_info
+    data = MovieDatabaseService.new.reviews(@keyword)
+
+    data[:results].map do |review_data|
+      Review.new(review_data, data[:total_results])
+    end
+  end
 end
 

@@ -17,4 +17,16 @@
   def search_movies(keyword)
     get_url("/3/search/movie?query=#{keyword}")
   end
+
+  def find_movie(movie_id)
+    get_url("/3/movie/#{movie_id}")
+  end
+
+  def find_cast(movie_id)
+    get_url("/3/movie/#{movie_id}/credits")
+  end
+
+  def reviews(movie_id)
+    get_url("/3/movie/#{movie_id}/reviews")
+  end
 end
